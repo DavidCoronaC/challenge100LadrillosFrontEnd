@@ -6,7 +6,7 @@ import './styles.scss';
 
 export const InputTypeComponent = ({title ,isValidMail,confirmPass,visiblePass, valueInput, nameInput, handleInputChange, setVisiblePass, type, placeholderInput}) => {
     const isRender = useRef(0);
-    let validateMail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    let validateMail = /^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
 
     useEffect(() => {
