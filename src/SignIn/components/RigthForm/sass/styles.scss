@@ -1,0 +1,44 @@
+.RigthForm_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .RigthForm_component_container{
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .2fr;
+        .RigthForm_Items_container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            font-family: Roboto;
+            overflow-y: scroll;
+            .RigthForm_Intern_container{
+                width: 50%;
+                justify-self: center;
+                padding: 2vw 0;
+                align-self: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px){
+    .RigthForm_container{
+        .RigthForm_component_container{
+            height: 90vh;
+            grid-template-rows: 5vh 85vh !important;
+            .RigthForm_Items_container{
+
+                .RigthForm_Intern_container{
+                    align-self: start;
+                    width: 90%;
+                    grid-row-start: 1 !important;
+                    grid-row-end: 1 !important;
+                }
+            }
+        }
+    }
+}

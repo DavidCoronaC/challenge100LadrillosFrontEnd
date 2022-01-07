@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+
+.SignIn_HomePage_container{
+    width: 100%;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: $white;
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+@media (max-width: 520px){
+    .SignIn_HomePage_container{
+        width: 100%;
+        margin-top: 10vh;
+        min-height: 90vh;
+        background: $white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}

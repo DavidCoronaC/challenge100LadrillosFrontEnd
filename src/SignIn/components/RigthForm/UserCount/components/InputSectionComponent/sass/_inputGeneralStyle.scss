@@ -1,0 +1,77 @@
+@import '../../../../../../styles/colors';
+
+.InputSectionComponent_Container{
+    width: 100%;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 2vw;
+    padding: 0;
+    .InputSectionComponent_Input_Container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+        .InputSectionComponent_Input_label{
+            font-size: 1.2rem;
+            color: $gray-i-main-text;
+        }
+        .InputSectionComponent_Input{
+            height: 40px;
+            align-self: stretch;
+            flex-grow: 0;
+            font-size: 1.1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            padding: .1vw .8vw;
+            border-radius: 4px;
+            outline: none;
+            border: solid 1px $gray-e-stoke-imputs;
+            background-color: $white;
+            color: $gray-i-main-text;
+        }
+        .InputSectionComponent_Input::placeholder{
+            color: $gray-e-stoke-imputs;
+        }   
+        .InputSectionComponent_Input_Pass_Container{
+            border-radius: 4px;
+            border: solid 1px $gray-e-stoke-imputs;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .InputSectionComponent_Input_Pass{
+                border: none;
+                width: 90%;
+            }
+            .InputSectionComponent_Input_Pass_img_container{
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                .InputSectionComponent_Input_Pass_img{
+                    width: 1.8rem;
+                }
+            }
+        }
+        .InputSectionComponent_form_button{
+            width: 9.2rem;
+            border: none;
+            cursor: pointer;
+            padding: 10px 24px;
+            border-radius: 4px;
+            background-color: $gray-c-forms-line;
+            color: $gray-g-text-disabled;
+        }
+        .InputSectionComponent_form_button_active{
+            color: $white;
+            border: none;
+            background-color: $primary-main;
+        }
+    }
+}    

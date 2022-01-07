@@ -1,0 +1,27 @@
+.StepsComponent_Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .StepsComponent_Steps_Container{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .StepsComponent_img{
+            width: .7vw;
+        }
+    }
+}
+
+@media (max-width: 520px){
+    .StepsComponent_Container{
+        grid-row-start: 1 !important;
+        grid-row-end: 1 !important;
+        .StepsComponent_Steps_Container{
+            .StepsComponent_img{
+                width: 2.5vw;
+            }
+        }
+    }   
+}

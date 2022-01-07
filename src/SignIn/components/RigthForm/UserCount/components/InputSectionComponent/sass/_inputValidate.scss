@@ -1,0 +1,24 @@
+@import '../../../../../../styles/colors';
+
+.InputValidate_Container{
+    width: 100%;
+    font-family: 'Roboto';
+    .InputValidate_info{
+        font-size: 1.2rem;
+        color: $gray-g-text-disabled;
+    }
+    .InputValidate_Items_Container{
+        margin-top: .5vw;
+        display: grid;
+        grid-template-columns: .1fr 1fr;
+        .InputValidate_Items_img{
+            align-self: center;
+            justify-self: center;
+        }
+        .InputValidate_Items_text{
+            font-size: 1rem;
+            letter-spacing: 0.05vw;
+            color: $gray-g-text-disabled;
+        }
+    }
+}

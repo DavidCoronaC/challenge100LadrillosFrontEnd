@@ -1,0 +1,36 @@
+@import '../../../styles/colors';
+
+.UserData_Container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr 1fr;
+    .UserData_Title{
+        
+    }
+    .UserData_Buttons_Container{
+        width: 100%;
+        padding: 1vw 0;
+        .UserData_button{
+            width: 9.2rem;
+            margin-right: 2vw;
+            border: none;
+            cursor: pointer;
+            padding: 10px 24px;
+            border-radius: 4px;
+            background-color: $gray-c-forms-line;
+            color: $gray-g-text-disabled;
+        }
+        .UserData_button_Return{
+            color: $primary-main;
+            border: solid 1px $secundary-main;
+            background-color: $secundary-lighter;
+        }
+        .UserData_button_Next{
+            color: $white;
+            border: none;
+            background-color: $primary-main;
+        }
+        
+    }
+}

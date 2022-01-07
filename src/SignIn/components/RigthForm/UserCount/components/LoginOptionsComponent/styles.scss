@@ -1,0 +1,77 @@
+@import '../../../../../styles/colors';
+
+.LoginOptionsComponent_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr;
+    font-family: 'Roboto';
+    .LoginOptionsComponent_title_container{
+        display: grid;
+        grid-template-columns: .6fr 1fr .6fr;
+        align-items: center;
+        .LoginOptionsComponent_line{
+            height: .1vw;
+            width: 100%;
+            background-color: $gray-c-forms-line;
+        }
+        .LoginOptionsComponent_text{
+            text-align: center;
+            font-size: 1.1vw;
+        }
+    }
+    .LoginOptionsComponent_socialItems_container{
+        width: 100%;
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .LoginOptionsComponent_socialImg_container{
+            width: 2.5vw;
+            height: 2.5vw;
+            flex-grow: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+            gap: 10px;
+            padding: 10px;
+            object-fit: contain;
+            border-radius: 4px;
+            box-shadow: 0 0 6px 0 $gray-b;
+            border: solid 1px $gray-c-forms-line;
+            background-color: $white;
+            cursor: pointer;
+            .LoginOptionsComponent_socialImg{
+                width: 2.5vw;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 520px){
+    .LoginOptionsComponent_container{
+
+        .LoginOptionsComponent_title_container{
+
+            .LoginOptionsComponent_line{
+
+            }
+            .LoginOptionsComponent_text{
+                font-size: 1.2rem;
+            }
+        }
+        .LoginOptionsComponent_socialItems_container{
+
+            .LoginOptionsComponent_socialImg_container{
+                width: 8.5vw;
+                height: 8.5vw;
+                .LoginOptionsComponent_socialImg{
+                    width: 8.5vw;
+                }
+            }
+        }
+    }
+
+}

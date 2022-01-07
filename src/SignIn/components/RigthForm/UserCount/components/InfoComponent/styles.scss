@@ -1,0 +1,23 @@
+@import '../../../../../styles/colors';
+
+.InfoComponent{
+    
+    .InfoComponent_Title{
+        font-size: 1.5rem;
+    }
+    .InfoComponent_text{
+        width: 100%;
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: 0.02vw;
+        text-align: left;
+        color: $gray-i-main-text;
+        .InfoComponent_text-style_element{
+            color: $alternative-3-light;
+        }
+    }
+}
+

@@ -1,0 +1,46 @@
+@import '../styles/colors';
+
+
+.CreatedCountComponent_Container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr .1fr .2fr .1fr .3fr .1fr .1fr;
+    align-items: center;
+    justify-items: center;
+    gap: .3rem;
+    font-family: 'Roboto';
+    .CreatedCountComponent_Title{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 2.5rem;
+        font-size: 1.3rem;
+    }
+    .CreatedCountComponent_img{
+        width: 3rem;
+    }
+    .CreatedCountComponent_createdCount{
+        font-size: 1.3rem;
+        align-self: flex-start;
+        margin: .3rem 0 1rem;
+    }
+    .CreatedCountComponent_number_Client{
+        color: $gray-g-text-disabled;
+        margin-bottom: 2.5rem ;
+    }
+    .CreatedCountComponent_userInfo_Name{
+        color: $gray-i-main-text;
+        font-size: 1.6rem;
+        line-height: 0.91;
+        letter-spacing: 0.09px;
+        margin-bottom: .3rem;
+    }
+    .CreatedCountComponent_userInfo_mail{
+        color: $gray-i-main-text;
+        font-size: 1rem;
+    }
+    .CreatedCountComponent_userInfo_Phone{
+        color: $gray-i-main-text;
+        font-size: 1rem;
+    }
+}

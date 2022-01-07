@@ -1,0 +1,137 @@
+@import '../../../styles/colors';
+
+
+.ModalPhoneInfoContainer_Container{
+    display: grid;
+    height: 70vh;
+    grid-template-rows: .1fr .3fr .1fr .1fr .3fr .5fr .1fr .3fr .4fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Roboto';
+    .ModalPhoneInfoContainer_Title{
+        color:  gray-i-main-text;
+        font-weight: 300;
+        font-size: 2vw;
+        margin: 0;
+    }
+    .ModalPhoneInfoContainer_img{
+        width: 5vw;
+        margin: 3vw 0;
+        align-self: center;
+    }
+    .ModalPhoneInfoContainer_infoTextCode{
+        font-size: 1vw;
+    }
+    .ModalPhoneInfoContainer_phoneNumber{
+        font-size: 1vw;
+        font-weight: 600;
+    }
+    .ModalPhoneInfoContainer_timeLimit{
+        font-size: 1vw;
+        font-weight: 300;
+        color: $gray-g-text-disabled;
+    }
+    .ModalPhoneInfoContainer_buttons_code_Container{
+
+    }
+    .ModalPhoneInfoContainer_infoMessage{
+        font-size: .9vw;
+        color: $gray-i-main-text;
+    }
+    .ModalPhoneInfoContainer_reSendCode{
+        font-weight: bold;
+        font-size: 1.5vw;
+        align-self: end;
+        color: $gray-g-text-disabled;
+    }
+    .ModalPhoneInfoContainer_buttons_container{
+        align-self: end;
+        width: 50%;
+        display: flex;
+        gap: 1vw;
+        justify-content: space-evenly;
+        .ModalPhoneInfoContainer_buttons{
+            cursor: pointer;
+            outline: none;
+            border-radius: .4vw;
+            padding: 1vw;
+            flex-grow: 1;
+            font-family: Roboto;
+            font-size: 1.2vw;
+            font-weight: normal;
+            font-stretch: condensed;
+            font-style: normal;
+            line-height: 1.25;
+            letter-spacing: normal;
+            text-align: center;
+        }
+        .ModalPhoneInfoContainer_button_cancel{
+            color: $primary-main;
+            border: solid 1px $secundary-main;
+            background-color: $secundary-lighter;
+        }
+        .ModalPhoneInfoContainer_button_valid{
+            color: $white;
+            border: none;
+            background-color: $primary-main;
+        }
+    }
+}
+
+
+@media (max-width: 520px){
+    .ModalPhoneInfoContainer_Container{
+        display: grid;
+        grid-template-rows: 5vh 10vh 5vh 5vh 10vh 15vh 5vh 10vh 20vh;
+        height: 90vh;
+        .ModalPhoneInfoContainer_Title{
+            color:  gray-i-main-text;
+            font-weight: 300;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        .ModalPhoneInfoContainer_img{
+            width: 4rem;
+            margin: 3vw 0;
+            align-self: center;
+        }
+        .ModalPhoneInfoContainer_infoTextCode{
+            font-size: .9rem;
+        }
+        .ModalPhoneInfoContainer_phoneNumber{
+            font-size: .9rem;
+            font-weight: 600;
+        }
+        .ModalPhoneInfoContainer_timeLimit{
+            font-size: .9rem;
+            font-weight: 300;
+            color: $gray-g-text-disabled;
+        }
+        .ModalPhoneInfoContainer_buttons_code_Container{
+    
+        }
+        .ModalPhoneInfoContainer_infoMessage{
+            font-size: .8rem;
+
+        }
+        .ModalPhoneInfoContainer_reSendCode{
+            font-size: 1.3rem;
+        }
+        .ModalPhoneInfoContainer_buttons_container{
+            align-self: end;
+            width: 80%;
+            .ModalPhoneInfoContainer_buttons{
+                font-size: 1rem;
+
+            }
+            .ModalPhoneInfoContainer_button_cancel{
+
+            }
+            .ModalPhoneInfoContainer_button_valid{
+
+            }
+        }
+    }
+
+}
